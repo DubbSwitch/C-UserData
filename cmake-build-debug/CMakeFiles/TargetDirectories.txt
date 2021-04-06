@@ -1,0 +1,3 @@
+C:/Users/Dubb_Switch/CLionProjects/UserData/cmake-build-debug/CMakeFiles/UserData.dir
+C:/Users/Dubb_Switch/CLionProjects/UserData/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dubb_Switch/CLionProjects/UserData/cmake-build-debug/CMakeFiles/rebuild_cache.dir
