@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-const double Employee::TAX = 0.02f;
+const double Employee::TAX = 100 * 0.2f;
 
 void Employee::Read() {
     cout << "Enter you first name: ";
@@ -23,13 +23,9 @@ void Employee::Read() {
     if (age > 19) isAdult = true;
     for (int i = 0; i < daysWorked; i++) {
         cout << "\bHow many hours did you work for day " << day + 1 << ": ";
-        cin >> hoursWorkedPerDay[day];
+        cin >> hoursWorkedPerDay;
         day++;
-    }
-    day = 0;
-    for (int i = 0; i < daysWorked; i++) {
-        hours = hoursWorkedPerDay[i] + taxableHours;
-        taxableHours = hours;
+        taxableHours += hoursWorkedPerDay;
     }
 
     grossIncome = taxableHours * wage;
