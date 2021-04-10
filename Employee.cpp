@@ -5,8 +5,10 @@ using namespace std;
 const double Employee::TAX = 0.02f;
 
 void Employee::Read() {
-    cout << "Enter you first and last name: ";
+    cout << "Enter you first name: ";
     cin >> name;
+    cout << "Enter your last initial: ";
+    cin >> initial;
     cout << "Enter your age: ";
     cin >> age;
     cout << "Enter your zipcode: ";
@@ -36,7 +38,7 @@ void Employee::Read() {
   };
 
 void Employee::Write() {
-    cout << "\n\t" << name << " worked " << taxableHours << " hours this week at $" << wage << " per hour.";
+    cout << "\n\t" << name << " " << initial << " worked " << taxableHours << " hours this week at $" << wage << " per hour.";
     cout << "\t" << name << " is " << age << " years of age.";
 
     cout << "\n\t" << "Gross Income: " << grossIncome;

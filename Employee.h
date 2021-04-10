@@ -1,6 +1,7 @@
 
 class Employee{
     private: char name[32];
+    private: char initial;
     private: int age;
     private: bool isAdult = false;
     private: int zipcode;
