@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/UserData.dir/Employee.cpp.obj"
   "CMakeFiles/UserData.dir/main.cpp.obj"
   "UserData.exe"
   "UserData.exe.manifest"

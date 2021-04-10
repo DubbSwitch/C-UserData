@@ -142,6 +142,33 @@ UserData/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\UserData.dir\build.make CMakeFiles/UserData.dir/build
 .PHONY : UserData/fast
 
+Employee.obj: Employee.cpp.obj
+
+.PHONY : Employee.obj
+
+# target to build an object file
+Employee.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UserData.dir\build.make CMakeFiles/UserData.dir/Employee.cpp.obj
+.PHONY : Employee.cpp.obj
+
+Employee.i: Employee.cpp.i
+
+.PHONY : Employee.i
+
+# target to preprocess a source file
+Employee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UserData.dir\build.make CMakeFiles/UserData.dir/Employee.cpp.i
+.PHONY : Employee.cpp.i
+
+Employee.s: Employee.cpp.s
+
+.PHONY : Employee.s
+
+# target to generate assembly for a file
+Employee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UserData.dir\build.make CMakeFiles/UserData.dir/Employee.cpp.s
+.PHONY : Employee.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... UserData
+	@echo ... Employee.obj
+	@echo ... Employee.i
+	@echo ... Employee.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -3,4 +3,4 @@ project(UserData)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(UserData main.cpp)
+add_executable(UserData main.cpp Employee.h Employee.cpp)

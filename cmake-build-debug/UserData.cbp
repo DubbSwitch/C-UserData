@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Dubb_Switch/CLionProjects/UserData/Employee.cpp">
+			<Option target="UserData"/>
+		</Unit>
+		<Unit filename="C:/Users/Dubb_Switch/CLionProjects/UserData/Employee.h">
+			<Option target="UserData"/>
+		</Unit>
 		<Unit filename="C:/Users/Dubb_Switch/CLionProjects/UserData/main.cpp">
 			<Option target="UserData"/>
 		</Unit>
