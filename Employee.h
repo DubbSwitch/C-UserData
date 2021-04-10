@@ -1,6 +1,6 @@
 
 class Employee{
-    private: char name;
+    private: char name[32];
     private: char initial;
     private: int age;
     private: bool isAdult = false;
@@ -8,15 +8,13 @@ class Employee{
     private: short wage;
     private: int daysWorked;
     private: int hoursWorkedPerDay;
-    static const double TAX;
+    static const double tax;
 
     int hours;
-    int taxableHours;
+    int taxableHours = 0;
 
     double grossIncome;
     double netIncome;
-    double taxDeducted;
-
 
 public: void Read();
 public: void Write();

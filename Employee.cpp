@@ -2,42 +2,39 @@
 #include <iostream>
 using namespace std;
 
-const double Employee::TAX = 100 * 0.2f;
+const double Employee::tax = 100 * 0.2f;
 
 void Employee::Read() {
-    cout << "Enter you first name: ";
+    cout << "\nEnter your name, mate: ";
     cin >> name;
-    cout << "Enter your last initial: ";
+    cout << "\nEnter your last initial: ";
     cin >> initial;
-    cout << "Enter your age: ";
+    cout << "\nEnter your age, mate: ";
     cin >> age;
-    cout << "Enter your zipcode: ";
+    cout << "\nEnter your zip code, mate: ";
     cin >> zipcode;
-    cout << "Enter your hourly wage: ";
+    cout << "\nWhat are your hourly wages, mate?: ";
     cin >> wage;
-    cout << "How many days did you work this week?: ";
+    cout << "\nHow many days did you work this week?: ";
     cin >> daysWorked;
     cout << "\n";
 
     unsigned int day = 0;
     if (age > 19) isAdult = true;
     for (int i = 0; i < daysWorked; i++) {
-        cout << "\bHow many hours did you work for day " << day + 1 << ": ";
+        cout << "\n\tHow many hours did you work for day " << day + 1 << ": "; day++;
         cin >> hoursWorkedPerDay;
-        day++;
         taxableHours += hoursWorkedPerDay;
     }
 
-    grossIncome = taxableHours * wage;
-    netIncome = TAX * grossIncome;
-    taxDeducted = TAX * grossIncome;
+    Employee::grossIncome = taxableHours * wage;
+    Employee::netIncome = grossIncome - tax;
   };
 
 void Employee::Write() {
-    cout << "\n\t" << name << " " << initial << " worked " << taxableHours << " hours this week at $" << wage << " per hour.";
-    cout << "\t" << name << " is " << age << " years of age.";
+    cout << "\n" << name << " " << initial << " worked " << taxableHours << " hours this week at $" << wage << " per hour.";
+    cout << "\n" << name << " is " << age << " years of age.";
 
-    cout << "\n\t" << "Gross Income: " << grossIncome;
-    cout << "\t" << "Net Income: " << netIncome;
-    cout << "\t" << "Net Income: " << netIncome;
+    cout << "\n\n" << "Gross Income: " << grossIncome;
+    cout << "\n" << "Net Income: " << netIncome << "\n";
 };
